@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import ProfileCard from './ProfileCard'
+import ProfileCardContainer from './ProfileCardContainer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,8 @@ function App() {
   return (
     <>  
     <div>
-      <ProfileCard name="radha" age="25" />
+      <ProfileCardContainer />
+      
     </div>
       
     </>
