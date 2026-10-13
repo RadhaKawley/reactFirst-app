@@ -7,23 +7,19 @@ import ProfileCard from './ProfileCard'
 import ProfileCardContainer from './ProfileCardContainer'
 import Counter from './Counter'
 import UserList from './UserList'
+import LifecycleDemo from './LifecycleDemo'
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>  
-     <div>
-      <ProfileCardContainer />
-      <Counter />
+  const [show, setShow] = useState(true);
+return (
       
-    </div>
-    <div>
-      <UserList />
-    </div>
-      
-    </>
-  )
+      <div>
+      <button onClick={() => setShow(!show)}>
+      {show ? 'Hide' : 'Show'} component
+      </button>
+      {show && <LifecycleDemo />}
+      </div>
+)
 }
 
 export default App
