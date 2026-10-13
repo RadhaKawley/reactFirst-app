@@ -5,15 +5,21 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 import ProfileCard from './ProfileCard'
 import ProfileCardContainer from './ProfileCardContainer'
+import Counter from './Counter'
+import UserList from './UserList'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>  
-    <div>
+     <div>
       <ProfileCardContainer />
+      <Counter />
       
+    </div>
+    <div>
+      <UserList />
     </div>
       
     </>
